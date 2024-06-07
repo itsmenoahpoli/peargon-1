@@ -17,11 +17,7 @@ const searchAuthor = async (authorId) => {
 
     return `${data.firstName} ${data.middleName} ${data.lastName}`;
   } catch (error) {
-    if (error instanceof axios.AxiosError) {
-      console.log(error.response?.status);
-    } else {
-      console.log("Author not found");
-    }
+    console.log("Author not found");
   }
 };
 
